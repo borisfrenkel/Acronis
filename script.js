@@ -4,8 +4,8 @@ function merge() {
     iterable = iterable.concat(arguments[i]);
   }
 
-  return iterable.sort(function (a, b) {
-    return a - b;
+  return iterable.sort(function (firstArg, secondArg) {
+    return firstArg - secondArg;
   });
 }
 

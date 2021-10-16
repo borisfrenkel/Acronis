@@ -4,7 +4,9 @@ function merge() {
     iterable = iterable.concat(arguments[i]);
   }
 
-  return iterable.sort();
+  return iterable.sort(function (a, b) {
+    return a - b;
+  });
 }
 
 var iterable1 = [1, 5, 9];

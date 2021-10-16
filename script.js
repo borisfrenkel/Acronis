@@ -4,12 +4,9 @@ function merge() {
     iterable = iterable.concat(arguments[i]);
   }
 
-  return iterable.sort(function (firstArg, secondArg) {
-    return firstArg - secondArg;
+  return iterable.sort(function (a, b) {
+    return a - b;
   });
 }
 
-var iterable1 = [1, 5, 9];
-var iterable2 = [2, 5];
-var iterable3 = [1, 6, 10, 11];
-console.log(merge(iterable1, iterable2, iterable3));
+module.exports = merge;
